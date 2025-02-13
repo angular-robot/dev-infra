@@ -8146,8 +8146,8 @@ __metadata:
   linkType: hard
 
 "firebase-functions@npm:^6.0.0":
-  version: 6.3.1
-  resolution: "firebase-functions@npm:6.3.1"
+  version: 6.3.2
+  resolution: "firebase-functions@npm:6.3.2"
   dependencies:
     "@types/cors": "npm:^2.8.5"
     "@types/express": "npm:^4.17.21"
@@ -8158,7 +8158,7 @@ __metadata:
     firebase-admin: ^11.10.0 || ^12.0.0 || ^13.0.0
   bin:
     firebase-functions: lib/bin/firebase-functions.js
-  checksum: 10c0/265f6dd874057bcf914454b17e29b92ab6b167ab8de964c63c5f985f2c5dbbc7d0bee64e2405f7f7eee676c6e7e70aa0a79f329331fb8937b4cb5adc8fb41388
+  checksum: 10c0/dd71d1006b36934795657bd952c2ef784917c8504b20378f7e2b77879b3e30010e1ec0903ba953c1185a769829a43537e28d98dab6187fff301304dfff7c2de1
   languageName: node
   linkType: hard
 
