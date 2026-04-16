@@ -31,16 +31,16 @@ export interface CommonCmdOpts {
 
 /** Interface describing the options for spawning a process synchronously. */
 export interface SpawnSyncOptions
-  extends CommonCmdOpts, Omit<_SpawnSyncOptions, 'shell' | 'stdio' | 'input'> {}
+  extends CommonCmdOpts, Omit<_SpawnSyncOptions, 'stdio' | 'input'> {}
 
 /** Interface describing the options for spawning a process. */
-export interface SpawnOptions extends CommonCmdOpts, Omit<_SpawnOptions, 'shell' | 'stdio'> {}
+export interface SpawnOptions extends CommonCmdOpts, Omit<_SpawnOptions, 'stdio'> {}
 
 /** Interface describing the options for exec-ing a process. */
-export interface ExecOptions extends CommonCmdOpts, Omit<_ExecOptions, 'shell' | 'stdio'> {}
+export interface ExecOptions extends CommonCmdOpts, Omit<_ExecOptions, 'stdio'> {}
 
 /** Interface describing the options for spawning an interactive process. */
-export interface SpawnInteractiveCommandOptions extends Omit<_SpawnOptions, 'shell' | 'stdio'> {}
+export interface SpawnInteractiveCommandOptions extends Omit<_SpawnOptions, 'stdio'> {}
 
 /** Interface describing the result of a spawned process. */
 export interface SpawnResult {
@@ -71,7 +71,7 @@ export abstract class ChildProcess {
     return new Promise<void>((resolve, reject) => {
       const commandText = `${command} ${args.join(' ')}`;
       Log.debug(`Executing command: ${commandText}`);
-      const childProcess = _spawn(command, args, {...options, shell: true, stdio: 'inherit'});
+      const childProcess = _spawn(command, args, {...options, stdio: 'inherit'});
       // The `close` event is used because the process is guaranteed to have completed writing to
       // stdout and stderr, using the `exit` event can cause inconsistent information in stdout and
       // stderr due to a race condition around exiting.
@@ -85,6 +85,10 @@ export abstract class ChildProcess {
    * @returns The command's stdout and stderr.
    */
   static spawnSync(command: string, args: string[], options: SpawnSyncOptions = {}): SpawnResult {
+    // Default shell to false to prevent OS command injection: with shell: true, Node.js
+    // internally joins command + args into a single string evaluated by /bin/sh, making
+    // shell metacharacters in args exploitable. Callers that genuinely require shell
+    // features (e.g. sourcing shell scripts) may explicitly pass shell: true.
     const commandText = `${command} ${args.join(' ')}`;
     const env = getEnvironmentForNonInteractiveCommand(options.env);
 
@@ -95,7 +99,7 @@ export abstract class ChildProcess {
       signal,
       stdout,
       stderr,
-    } = _spawnSync(command, args, {...options, env, encoding: 'utf8', shell: true, stdio: 'pipe'});
+    } = _spawnSync(command, args, {...options, env, encoding: 'utf8', stdio: 'pipe'});
 
     /** The status of the spawn result. */
     const status = statusFromExitCodeAndSignal(exitCode, signal);
@@ -116,13 +120,17 @@ export abstract class ChildProcess {
    *   rejects on command failure.
    */
   static spawn(command: string, args: string[], options: SpawnOptions = {}): Promise<SpawnResult> {
+    // Default shell to false to prevent OS command injection: with shell: true, Node.js
+    // internally joins command + args into a single string evaluated by /bin/sh, making
+    // shell metacharacters in args exploitable. Callers that genuinely require shell
+    // features (e.g. sourcing shell scripts) may explicitly pass shell: true.
     const commandText = `${command} ${args.join(' ')}`;
     const env = getEnvironmentForNonInteractiveCommand(options.env);
 
     return processAsyncCmd(
       commandText,
       options,
-      _spawn(command, args, {...options, env, shell: true, stdio: 'pipe'}),
+      _spawn(command, args, {...options, env, stdio: 'pipe'}),
     );
   }
 
