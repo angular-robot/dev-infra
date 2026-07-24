@@ -19,7 +19,7 @@ importers:
     devDependencies:
       '@angular/build':
         specifier: 22.1.0-rc.0
-        version: 22.1.0-rc.0(@angular/compiler-cli@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(typescript@6.0.3))(@angular/compiler@22.1.0-rc.0)(@angular/core@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(rxjs@7.8.2)(zone.js@0.16.2))(@angular/platform-browser@22.1.0-rc.0(@angular/common@22.1.0-rc.0(@angular/core@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(rxjs@7.8.2)(zone.js@0.16.2))(rxjs@7.8.2))(@angular/core@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(rxjs@7.8.2)(zone.js@0.16.2)))(@types/node@22.20.1)(chokidar@5.0.0)(postcss@8.5.20)(rollup@4.62.2)(tslib@2.8.1)(typescript@6.0.3)
+        version: 22.1.0-rc.0(@angular/compiler-cli@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(typescript@6.0.3))(@angular/compiler@22.1.0-rc.0)(@angular/core@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(rxjs@7.8.2)(zone.js@0.16.2))(@angular/platform-browser@22.1.0-rc.0(@angular/common@22.1.0-rc.0(@angular/core@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(rxjs@7.8.2)(zone.js@0.16.2))(rxjs@7.8.2))(@angular/core@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(rxjs@7.8.2)(zone.js@0.16.2)))(@types/node@22.20.1)(chokidar@5.0.0)(postcss@8.5.22)(rollup@4.62.2)(tslib@2.8.1)(typescript@6.0.3)
       '@angular/cli':
         specifier: 22.1.0-rc.0
         version: 22.1.0-rc.0(@types/node@22.20.1)(chokidar@5.0.0)
@@ -1577,8 +1577,8 @@ packages:
     resolution: {integrity: sha512-4Dj6M28JB+oAH8kFkTLUo+a2jwOFkuqb3yucU0CANcRRUbxS0cP0nZYCGjcc3BNXwRIsUVmDGgzawme7zvJHvg==}
     engines: {node: '>=12'}
 
-  baseline-browser-mapping@2.10.43:
-    resolution: {integrity: sha512-AjYpR78kDWAY3Efj+cDTFH9t9SCoL7OoTp1BOb0mQV7S+6CiLwnWM3FyxhJtdPufDFKzmCSFoUncKjWgJEZTCQ==}
+  baseline-browser-mapping@2.11.1:
+    resolution: {integrity: sha512-HYXq73DDpCtNzOmrFsm9eSwCvWCql0RzqjpDzXN9EadiLJ4DNat0nsZ/Bzmy+Ud12mb4/zKDY0cQ805ZzN+i0A==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -1593,8 +1593,8 @@ packages:
   boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
 
-  browserslist@4.28.6:
-    resolution: {integrity: sha512-FQBYNK15VMslhLHpA7+n+n1GOlF1kId2xcCg7/j95f24AOF6VDYMNH4mFxF7KuaTdv627faazpOAjFzMrfJOUw==}
+  browserslist@4.28.7:
+    resolution: {integrity: sha512-JxV13hNrFxqjOc8alRbq9dK1MM79NEXYpma2B2J4wAtpWS5zIEIKqWPGCl7N4o7Uc7B7itylh7SuDujATRyyTw==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
@@ -1740,8 +1740,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.5.393:
-    resolution: {integrity: sha512-kiDJdIUawuEIcp9XoICKp1iTYDEbgguIPq526N1Q7jIQDeQ3CqoMx71025PI/7E48Ddtw2HuWsVjY7afEgNxmg==}
+  electron-to-chromium@1.5.395:
+    resolution: {integrity: sha512-7zt9Aw+SrmxLWLN0zhaTWZQiCdryLVrYTq5R7iZakLvi2UQPYMMsROYV/2qVCzMeCiSXHwKOU+sZ4zOVVlrtKA==}
 
   emoji-regex@10.6.0:
     resolution: {integrity: sha512-toUI84YS5YmxW219erniWD0CIVOo46xGKColeNQRgOzDorgBi1v4D71/OFzgD9GO2UGKIv1C3Sp8DAn0+j5w7A==}
@@ -1993,8 +1993,8 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  jose@6.2.3:
-    resolution: {integrity: sha512-YYVDInQKFJfR/xa3ojUTl8c2KoTwiL1R5Wg9YCydwH0x0B9grbzlg5HC7mMjCtUJjbQ/YnGEZIhI5tCgfTb4Hw==}
+  jose@6.2.4:
+    resolution: {integrity: sha512-N8acGzVsQy6M/fjFcxtysNc4Q379TcM5dM/qKkNtsHFji88yANnXTr7BLeP75iPnFwBfQzM/jg2BZ9+HZrHCZA==}
 
   js-tokens@10.0.0:
     resolution: {integrity: sha512-lM/UBzQmfJRo9ABXbPWemivdCW8V2G8FHaHdypQaIy523snUjog0W71ayWXTjiR+ixeMyVHN2XcpnTd/liPg/Q==}
@@ -2124,6 +2124,9 @@ packages:
 
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
+
+  magic-string@1.0.0:
+    resolution: {integrity: sha512-CGvjzMN08iv6w1mm4/x3Gh1hLb4VnyRUA15FFpl6CsCIGGoe36k7kY5KNz9QDbSBN5I/fWHM6ZlIkUTa5xdUEA==}
 
   magic-string@1.1.0:
     resolution: {integrity: sha512-kS3VHe0nEPST2saQV4Rbkchcd3UBRkVTQHo1D3h/ZTwFDhai/mfKkmtPAtD129EOI7K3HlHIsFOt0WrI2/oU9g==}
@@ -2290,8 +2293,8 @@ packages:
     peerDependencies:
       postcss: ^8.4.31
 
-  postcss@8.5.20:
-    resolution: {integrity: sha512-lW616l85ucIQL+FocMmL7pQFPqBmwejrCMg+iPxyImlrANNJG9NHq/RkyCZopDhd8C3LA03PHRJDjkbGu8vvug==}
+  postcss@8.5.22:
+    resolution: {integrity: sha512-KBDEIpLrvpv16pp3K0Fw+UCoZfopFjjgeB+0tA/aaThfEE74kKDLrgg603YvOWJyg3+WYtyq3xYsQWsIyZlPqQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   proc-log@7.0.0:
@@ -2669,7 +2672,7 @@ snapshots:
     transitivePeerDependencies:
       - chokidar
 
-  '@angular/build@22.1.0-rc.0(@angular/compiler-cli@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(typescript@6.0.3))(@angular/compiler@22.1.0-rc.0)(@angular/core@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(rxjs@7.8.2)(zone.js@0.16.2))(@angular/platform-browser@22.1.0-rc.0(@angular/common@22.1.0-rc.0(@angular/core@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(rxjs@7.8.2)(zone.js@0.16.2))(rxjs@7.8.2))(@angular/core@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(rxjs@7.8.2)(zone.js@0.16.2)))(@types/node@22.20.1)(chokidar@5.0.0)(postcss@8.5.20)(rollup@4.62.2)(tslib@2.8.1)(typescript@6.0.3)':
+  '@angular/build@22.1.0-rc.0(@angular/compiler-cli@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(typescript@6.0.3))(@angular/compiler@22.1.0-rc.0)(@angular/core@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(rxjs@7.8.2)(zone.js@0.16.2))(@angular/platform-browser@22.1.0-rc.0(@angular/common@22.1.0-rc.0(@angular/core@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(rxjs@7.8.2)(zone.js@0.16.2))(rxjs@7.8.2))(@angular/core@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(rxjs@7.8.2)(zone.js@0.16.2)))(@types/node@22.20.1)(chokidar@5.0.0)(postcss@8.5.22)(rollup@4.62.2)(tslib@2.8.1)(typescript@6.0.3)':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@angular-devkit/architect': 0.2201.0-rc.0(chokidar@5.0.0)
@@ -2681,7 +2684,7 @@ snapshots:
       '@inquirer/confirm': 6.1.1(@types/node@22.20.1)
       '@vitejs/plugin-basic-ssl': 2.3.0(vite@8.1.5(@types/node@22.20.1)(esbuild@0.28.1)(sass@1.101.0))
       beasties: 0.4.3
-      browserslist: 4.28.6
+      browserslist: 4.28.7
       esbuild: 0.28.1
       https-proxy-agent: 9.1.0
       jsonc-parser: 3.3.1
@@ -2705,7 +2708,7 @@ snapshots:
       '@angular/core': 22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(rxjs@7.8.2)(zone.js@0.16.2)
       '@angular/platform-browser': 22.1.0-rc.0(@angular/common@22.1.0-rc.0(@angular/core@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(rxjs@7.8.2)(zone.js@0.16.2))(rxjs@7.8.2))(@angular/core@22.1.0-rc.0(@angular/compiler@22.1.0-rc.0)(rxjs@7.8.2)(zone.js@0.16.2))
       lmdb: 3.5.6
-      postcss: 8.5.20
+      postcss: 8.5.22
       rollup: 4.62.2
     transitivePeerDependencies:
       - '@types/node'
@@ -2831,7 +2834,7 @@ snapshots:
     dependencies:
       '@babel/compat-data': 8.0.0
       '@babel/helper-validator-option': 8.0.0
-      browserslist: 4.28.6
+      browserslist: 4.28.7
       lru-cache: 11.5.2
       semver: 7.8.5
 
@@ -3308,7 +3311,7 @@ snapshots:
       express: 5.2.1
       express-rate-limit: 8.6.0(express@5.2.1)
       hono: 4.12.31
-      jose: 6.2.3
+      jose: 6.2.4
       json-schema-typed: 8.0.2
       pkce-challenge: 5.0.1
       raw-body: 3.0.2
@@ -3807,7 +3810,7 @@ snapshots:
 
   ansi-styles@6.2.3: {}
 
-  baseline-browser-mapping@2.10.43: {}
+  baseline-browser-mapping@2.11.1: {}
 
   beasties@0.4.3:
     dependencies:
@@ -3817,9 +3820,9 @@ snapshots:
       domhandler: 5.0.3
       htmlparser2: 10.1.0
       picocolors: 1.1.1
-      postcss: 8.5.20
+      postcss: 8.5.22
       postcss-media-query-parser: 0.2.3
-      postcss-safe-parser: 7.0.1(postcss@8.5.20)
+      postcss-safe-parser: 7.0.1(postcss@8.5.22)
 
   body-parser@2.3.0:
     dependencies:
@@ -3837,13 +3840,13 @@ snapshots:
 
   boolbase@1.0.0: {}
 
-  browserslist@4.28.6:
+  browserslist@4.28.7:
     dependencies:
-      baseline-browser-mapping: 2.10.43
+      baseline-browser-mapping: 2.11.1
       caniuse-lite: 1.0.30001806
-      electron-to-chromium: 1.5.393
+      electron-to-chromium: 1.5.395
       node-releases: 2.0.51
-      update-browserslist-db: 1.2.3(browserslist@4.28.6)
+      update-browserslist-db: 1.2.3(browserslist@4.28.7)
 
   buffer-from@1.1.2: {}
 
@@ -3974,7 +3977,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.5.393: {}
+  electron-to-chromium@1.5.395: {}
 
   emoji-regex@10.6.0: {}
 
@@ -4242,7 +4245,7 @@ snapshots:
 
   isexe@2.0.0: {}
 
-  jose@6.2.3: {}
+  jose@6.2.4: {}
 
   js-tokens@10.0.0: {}
 
@@ -4360,6 +4363,10 @@ snapshots:
   lru-cache@11.5.2: {}
 
   magic-string@0.30.21:
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.5.5
+
+  magic-string@1.0.0:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
 
@@ -4542,11 +4549,11 @@ snapshots:
 
   postcss-media-query-parser@0.2.3: {}
 
-  postcss-safe-parser@7.0.1(postcss@8.5.20):
+  postcss-safe-parser@7.0.1(postcss@8.5.22):
     dependencies:
-      postcss: 8.5.20
+      postcss: 8.5.22
 
-  postcss@8.5.20:
+  postcss@8.5.22:
     dependencies:
       nanoid: 3.3.16
       picocolors: 1.1.1
@@ -4855,9 +4862,9 @@ snapshots:
 
   unpipe@1.0.0: {}
 
-  update-browserslist-db@1.2.3(browserslist@4.28.6):
+  update-browserslist-db@1.2.3(browserslist@4.28.7):
     dependencies:
-      browserslist: 4.28.6
+      browserslist: 4.28.7
       escalade: 3.2.0
       picocolors: 1.1.1
 
@@ -4869,7 +4876,7 @@ snapshots:
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.5
-      postcss: 8.5.20
+      postcss: 8.5.22
       rolldown: 1.1.5
       tinyglobby: 0.2.17
     optionalDependencies:
